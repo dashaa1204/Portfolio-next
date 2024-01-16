@@ -1,11 +1,12 @@
 import { Header } from "./Header";
+import { Hero } from "./Hero";
 
 export const Portfolio = () => {
   return (
     <div>
       <Header />
-      {/* <Hero />
-      <About />
+      <Hero />
+      {/* <About />
       <Skills />
       <Experience />
       <Work />

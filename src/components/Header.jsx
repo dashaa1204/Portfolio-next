@@ -1,16 +1,26 @@
 export const Header = () => {
   return (
-    <div>
-      <div className="Container">
-        <p>"SS"</p>
-        <div className="navigation">
-          <p className="title">About</p>
-          <p className="title">Work</p>
-          <p className="title">Testimonials</p>
-          <p className="title">Contact</p>
-          <div className="divider"></div>
-          <div className="Action">
-            <div className="iconButton">
+    <div className="flex px-20 py-4 justify-between">
+      <div className="flex min-w-full justify-between items-center">
+        <div className="text-center text-3xl">"SS"</div>
+        <div className="flex justify-center items-center gap-6">
+          <a className="text-base">About</a>
+          <a className="text-base">Work</a>
+          <a className="text-base">Testimonials</a>
+          <a className="text-base">Contact</a>
+          <div className="w-1 h-6">
+            <svg
+              width="1"
+              height="24"
+              viewBox="0 0 1 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="0.5" y1="24" x2="0.5" stroke="#F3F4F6" />
+            </svg>
+          </div>
+          <div className="flex justify-center items-center gap-4">
+            <div className="flex p-1 justify-center items-center">
               <svg
                 width="24"
                 height="24"
@@ -83,7 +93,9 @@ export const Header = () => {
                 />
               </svg>
             </div>
-            <div className="Button">Download CV</div>
+            <div className="flex py-1.5 px-4 justify-center items-center gap-2 border rounded-xl bg-gray-900 text-gray-50 text-base">
+              Download CV
+            </div>
           </div>
         </div>
       </div>

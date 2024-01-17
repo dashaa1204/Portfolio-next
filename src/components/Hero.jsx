@@ -1,8 +1,8 @@
 export const Hero = () => {
   return (
     <div className="flex px-24 py-20 justify-between items-start">
-      <div className="flex px-20 py-4 justify-between">
-        <div className="flex flex-col justify-center items-start gap-12">
+      <div className="flex px-20 py-4 justify-between flex-1">
+        <div className="flex flex-col justify-center items-start gap-12 max-w-[768px]">
           <div className="flex flex-col justify-center items-start gap-2">
             <p className="text-6xl font-bold leading-tight">Hi, I’m Sagar 👋</p>
             <p className="text-base font-normal leading-6">
@@ -141,11 +141,11 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex min-w-96 flex-col justify-center items-end">
+        <div className="flex min-w-96 flex-col justify-center items-end flex-1">
           <div className="w-80 h-auto ">
-            <div className="w-280 h-320 shrink-0"></div>
+            <div className="w-[280px] h-[320px] shrink-0 absolute bg-gray-200 mt-10 ml-10 -z-50"></div>
             <img
-              className="h-80 w-70 shrink-0"
+              className="w-[280px] h-[320px] border-8 border-white"
               src="https://s3-alpha-sig.figma.com/img/f85c/f455/11cd2ba02a83d564218d6500a134a91d?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J6ilx-NOb63~KzVYyZfxx4qzRN~gm9QHjip~sIpK9MTVSZsX~huwLpZqpJyqW7GDTT8lB8QtBCj5-2PtU-Ygp48aaoTUuruT2gkBXQL~lHchh7pKMdkHIJrb2oMYnvdAYQNxOMjjUIF8HDscGx5Nt7iw4F0WHx0HmiLM~STQEdaUIw0hp1E28oW5KSCJTY9dpgSECxgzNyTUNroqNwgsE5X4gYOS6SIFW~iIc98LskU-vU9DVPo3dEzu2N-2Fz4UiQZedr6UAGezp4AEFbGvN6RWj7EetJyu7prBfAxtS4Q0dAi36VtSyse6uAVnFGuXHQ9Y83-~6UcTO1YSVEzzGQ__"
               alt=""
             />

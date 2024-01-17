@@ -2,7 +2,7 @@ export const Header = () => {
   return (
     <div className="flex px-20 py-4 justify-between">
       <div className="flex min-w-full justify-between items-center">
-        <div className="text-center text-3xl">"SS"</div>
+        <div className="text-center text-3xl">&#60; SS/&#62;</div>
         <div className="flex justify-center items-center gap-6">
           <a className="text-base">About</a>
           <a className="text-base">Work</a>

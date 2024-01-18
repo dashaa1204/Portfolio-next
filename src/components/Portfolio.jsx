@@ -1,6 +1,8 @@
 import { Header } from "./Header";
 import { Hero } from "./Hero";
 import { About } from "./About";
+import { Skills } from "./Skills";
+import { Experience } from "./Experience";
 
 export const Portfolio = () => {
   return (
@@ -8,9 +10,9 @@ export const Portfolio = () => {
       <Header />
       <Hero />
       <About />
-      {/* <Skills />
+      <Skills />
       <Experience />
-      <Work />
+      {/* <Work />
       <Contactme />
       <Footer /> */}
     </div>

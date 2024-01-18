@@ -4,7 +4,7 @@ export const About = () => {
       <div className="flex flex-col px-8 items-center gap-12">
         <div className="flex flex-col items-start gap-4">
           <div className="flex flex-col justify-center items-center">
-            <div className="flex py-1 px-5 justify-center items-center">
+            <div className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">
               About me
             </div>
           </div>

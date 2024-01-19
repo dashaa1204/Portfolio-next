@@ -4,6 +4,7 @@ import { About } from "./About";
 import { Skills } from "./Skills";
 import { Experience } from "./Experience";
 import { Work } from "./Work";
+import { Contact } from "./Contact";
 
 export const Portfolio = () => {
   return (
@@ -14,8 +15,8 @@ export const Portfolio = () => {
       <Skills />
       <Experience />
       <Work />
-      {/* <Contactme />
-      <Footer /> */}
+      <Contact />
+      {/* <Footer /> */}
     </div>
   );
 };

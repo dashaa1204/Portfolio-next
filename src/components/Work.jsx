@@ -1,4 +1,4 @@
-import { work } from "@/utils/Work";
+import { work } from "@/utils/workIcon";
 import { WorkCard } from "./WorkCard";
 
 export const Work = () => {

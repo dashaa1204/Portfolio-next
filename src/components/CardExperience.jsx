@@ -6,8 +6,8 @@ export const CardExperience = ({ logo, header, text, date }) => {
         <div className="flex w-[384px] flex-col items-start gap-4">
           <h1 className="text-xl font-semibold text-gray-900">{header}</h1>
           <ul className="flex flex-col items-start gap-1 self-stretch list-disc">
-            {text.map((list) => {
-              return <li>{list}</li>;
+            {text.map((list, index) => {
+              return <li key={index}>{list}</li>;
             })}
           </ul>
         </div>

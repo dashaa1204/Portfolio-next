@@ -17,13 +17,21 @@ export const Skills = () => {
         </div>
         <div className="flex flex-col items-start gap-12 self-stretch">
           <div className="flex justify-between items-center self-stretch">
-            {skills1.map((skill) => (
-              <CardSkills logo={skill.icon} text={skill.skillName} />
+            {skills1.map((skill, index) => (
+              <CardSkills
+                logo={skill.icon}
+                text={skill.skillName}
+                key={index}
+              />
             ))}
           </div>
           <div className="flex justify-between items-center self-stretch">
-            {skills2.map((skill) => (
-              <CardSkills logo={skill.icon} text={skill.skillName} />
+            {skills2.map((skill, index) => (
+              <CardSkills
+                logo={skill.icon}
+                text={skill.skillName}
+                key={index}
+              />
             ))}
           </div>
         </div>

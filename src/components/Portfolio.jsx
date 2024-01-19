@@ -3,6 +3,7 @@ import { Hero } from "./Hero";
 import { About } from "./About";
 import { Skills } from "./Skills";
 import { Experience } from "./Experience";
+import { Work } from "./Work";
 
 export const Portfolio = () => {
   return (
@@ -12,8 +13,8 @@ export const Portfolio = () => {
       <About />
       <Skills />
       <Experience />
-      {/* <Work />
-      <Contactme />
+      <Work />
+      {/* <Contactme />
       <Footer /> */}
     </div>
   );

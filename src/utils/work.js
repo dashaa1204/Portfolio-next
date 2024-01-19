@@ -1,0 +1,55 @@
+import { WorkIcon } from "@/components/icons/WorkIcon";
+
+export const work = [
+  {
+    pic: <WorkIcon />,
+    header: "Fiskil",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    tech: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+  {
+    pic: <WorkIcon />,
+    header: "Fiskil",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    tech: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+  {
+    pic: <WorkIcon />,
+    header: "Fiskil",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+    tech: [
+      "React",
+      "Next.js",
+      "Typescript",
+      "Nest.js",
+      "PostgreSQL",
+      "Tailwindcss",
+      "Figma",
+      "Cypress",
+      "Storybook",
+      "Git",
+    ],
+  },
+];

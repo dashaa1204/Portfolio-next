@@ -10,6 +10,10 @@ export const Header = () => {
     console.log(theme);
   };
 
+  const buttonClassname = `${
+    theme == "light" ? "bg-gray-900 text-gray-300" : "bg-[#FFF] text-gray-900"
+  }`;
+
   const headerClassname = ` ${
     theme == "light" ? "bg-[#FFF] text-gray-900" : "bg-gray-900 text-gray-300"
   }`;
@@ -43,7 +47,9 @@ export const Header = () => {
             >
               {theme == "light" ? <LightIcon /> : <DarkIcon />}
             </div>
-            <div className="flex py-1.5 px-4 justify-center items-center gap-2 border rounded-xl bg-gray-900 text-gray-50 text-base">
+            <div
+              className={`flex py-1.5 px-4 justify-center items-center gap-2 border rounded-xl text-base ${buttonClassname}`}
+            >
               Download CV
             </div>
           </div>

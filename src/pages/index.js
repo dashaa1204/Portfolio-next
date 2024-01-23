@@ -1,9 +1,10 @@
 import { Portfolio } from "@/components/Portfolio";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export default function Home() {
   return (
-    <div>
+    <ThemeProvider>
       <Portfolio />
-    </div>
+    </ThemeProvider>
   );
 }

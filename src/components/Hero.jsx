@@ -15,7 +15,7 @@ export const Hero = () => {
       className={`flex py-16 px-4 justify-between items-start self-stretch ${headerClass} sm: py-24 px-20`}
     >
       <div className="flex flex-col items-start gap-12 flex-1 sm:px-8 flex-wrap">
-        <div className="flex flex-col justify-center items-start gap-12 max-w-[768px]">
+        <div className="flex flex-col justify-center items-center self-stretch sm:items-start gap-12 max-w-[768px]">
           <div className="flex flex-col justify-center items-start gap-2">
             <p className="text-6xl font-bold leading-tight">Hi, I’m Sagar 👋</p>
             <p className="text-base font-normal leading-6 w-[768px]">

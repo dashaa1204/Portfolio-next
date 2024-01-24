@@ -5,10 +5,11 @@ import { Skills } from "./Skills";
 import { Experience } from "./Experience";
 import { Work } from "./Work";
 import { Contact } from "./Contact";
+import { Footer } from "./Footer";
 
 export const Portfolio = () => {
   return (
-    <div>
+    <div className="w-[375px] flex flex-col items-start sm:w-[1440px]">
       <Header />
       <Hero />
       <About />
@@ -16,7 +17,7 @@ export const Portfolio = () => {
       <Experience />
       <Work />
       <Contact />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

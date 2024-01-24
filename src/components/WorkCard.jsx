@@ -1,18 +1,31 @@
+import { useTheme } from "@/context/ThemeContext";
+
 export const WorkCard = ({ pic, header, text, tech, index }) => {
+  const { theme } = useTheme();
   if (index % 2 === 0) {
     return (
-      <div className="flex w-[1152px] items-start">
-        <div className="flex p-12 justify-center items-center flex-1 self-stretch">
+      <div className="flex w-[1152px] items-start rounded-xl overflow-hidden">
+        <div
+          className={`flex p-12 justify-center items-center flex-1 self-stretch ${
+            theme == "light" ? "bg-white" : "bg-gray-700"
+          }`}
+        >
           {pic}
         </div>
-        <div className="flex p-12 flex-col items-center gap-6 flex-1 self-stretch">
+        <div
+          className={`flex p-12 flex-col items-center gap-6 flex-1 self-stretch ${
+            theme == "light" ? "bg-white" : "bg-gray-800"
+          }`}
+        >
           <h1>{header}</h1>
           <p>{text}</p>
           <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
             {tech.map((unit, index) => {
               return (
                 <div
-                  className="flex py-1 px-5 justify-center items-center bg-gray-200 rounded-xl"
+                  className={`flex py-1 px-5 justify-center items-center  rounded-xl ${
+                    theme == "light" ? "bg-gray-200" : "bg-gray-700"
+                  }`}
                   key={index}
                 >
                   {unit}
@@ -58,18 +71,28 @@ export const WorkCard = ({ pic, header, text, tech, index }) => {
     );
   } else {
     return (
-      <div className="flex w-[1152px] items-start flex-row-reverse">
-        <div className="flex p-12 justify-center items-center flex-1 self-stretch">
+      <div className="flex w-[1152px] items-start flex-row-reverse rounded-xl overflow-hidden">
+        <div
+          className={`flex p-12 justify-center items-center flex-1 self-stretch ${
+            theme == "light" ? "bg-white" : "bg-gray-700"
+          }`}
+        >
           {pic}
         </div>
-        <div className="flex p-12 flex-col items-center gap-6 flex-1 self-stretch">
+        <div
+          className={`flex p-12 flex-col items-center gap-6 flex-1 self-stretch ${
+            theme == "light" ? "bg-white" : "bg-gray-800"
+          }`}
+        >
           <h1>{header}</h1>
           <p>{text}</p>
           <div className="flex items-center content-center gap-2 self-stretch flex-wrap">
             {tech.map((unit, index) => {
               return (
                 <div
-                  className="flex py-1 px-5 justify-center items-center bg-gray-200 rounded-xl"
+                  className={`flex py-1 px-5 justify-center items-center  rounded-xl ${
+                    theme == "light" ? "bg-gray-200" : "bg-gray-700"
+                  }`}
                   key={index}
                 >
                   {unit}

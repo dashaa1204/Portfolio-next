@@ -1,10 +1,23 @@
+import { useTheme } from "@/context/ThemeContext";
+
 export const About = () => {
+  const { theme } = useTheme();
   return (
-    <div className="flex py-24 px-20 justify-between items-start bg-gray-50">
+    <div
+      className={`flex py-24 px-20 justify-between items-start ${
+        theme == "light"
+          ? "bg-gray-50 text-gray-950"
+          : "bg-gray-900 text-gray-50"
+      }`}
+    >
       <div className="flex flex-col px-8 items-center gap-12">
         <div className="flex flex-col items-start gap-4">
           <div className="flex flex-col justify-center items-center">
-            <div className="flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200">
+            <div
+              className={`flex py-1 px-5 justify-center items-center rounded-xl ${
+                theme == "light" ? "bg-gray-200" : "bg-gray-700"
+              }`}
+            >
               About me
             </div>
           </div>
@@ -12,9 +25,15 @@ export const About = () => {
         <div className="flex item-start gap-12">
           <div className="flex min-w-[444px] flex-col flex-1">
             <div className="w-[440px] h-[520px]">
-              <div className="w-[400px] h-[480px] border-8px border-gray-50 bg-gray-200 absolute mt-10 mr-20"></div>
+              <div
+                className={`w-[400px] h-[480px] border-8px border-gray-50  absolute mt-10 mr-20 ${
+                  theme == "light" ? "bg-gray-200" : "bg-gray-700"
+                }`}
+              ></div>
               <img
-                className="w-[400px] h-[480px] border-8 border-gray-50 absolute ml-10"
+                className={`w-[400px] h-[480px] border-8 absolute ml-10 ${
+                  theme == "light" ? "border-gray-50" : "border-gray-900"
+                }`}
                 src="https://s3-alpha-sig.figma.com/img/8781/bda6/7a25952db5724f48492cd455a6e81952?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iD776LocC9a2IKsEEOaYst01NN5Lo3uvEsPe-g-xHHCoZ3YH2nTx6vngudPrjvMx9V8fPVT4IK3s3nj1Myeef6xBPc9vfd3E4iP1c2fe7QC-nBR2k~YbfdlJNFiyDEEFAXF6TtkbM5EehR2t8RehwXWG5DL-QW2AgEX4WhHCUHTCwg8YVAk0fK5PiQ2zyyV9zL0bfPyOdcr7ihc1WFlz7Tdf-PKy6ukX3mjD0Vo2wuGgontjFSSetothS6hfcwSOXmbzezxEO4NmD29qL1pCYvp2iVoFU~lu0h6JaoLlT3hc0LVsjWRZdSiwGHT0XXpjzdYHAbrDM70dMS1aH~n-hw__"
                 alt=""
               />

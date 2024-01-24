@@ -11,20 +11,20 @@ export const Header = () => {
   };
 
   const buttonClassname = `${
-    theme == "light" ? "bg-gray-900 text-gray-300" : "bg-[#FFF] text-gray-900"
+    theme == "light" ? "bg-gray-950 text-gray-300" : "bg-[#FFF] text-gray-950"
   }`;
 
   const headerClassname = ` ${
-    theme == "light" ? "bg-[#FFF] text-gray-900" : "bg-gray-900 text-gray-300"
+    theme == "light" ? "bg-[#FFF] text-gray-950" : "bg-gray-950 text-gray-300"
   }`;
 
   return (
     <div
-      className={`flex px-20 py-4 justify-between items-center self-stretch border-b ${headerClassname}`}
+      className={`flex p-4 justify-between items-center self-stretch ${headerClassname} sm: py-4 px-20`}
     >
       <div className="flex min-w-full justify-between items-center">
         <div className="text-center text-3xl font-bold">&#60; SS/&#62;</div>
-        <div className="flex justify-center items-center gap-6">
+        <div className="justify-center items-center gap-6 hidden sm:flex">
           <a className="text-base">About</a>
           <a className="text-base">Work</a>
           <a className="text-base">Testimonials</a>

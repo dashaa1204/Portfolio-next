@@ -9,7 +9,7 @@ import { Footer } from "./Footer";
 
 export const Portfolio = () => {
   return (
-    <div className="w-[375px] flex flex-col items-start sm:w-[1440px]">
+    <div className="flex w-[375px] flex-col items-start sm:w-[1140px]">
       <Header />
       <Hero />
       <About />

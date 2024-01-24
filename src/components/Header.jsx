@@ -20,9 +20,9 @@ export const Header = () => {
 
   return (
     <div
-      className={`flex p-4 justify-between items-center self-stretch ${headerClassname} sm: py-4 px-20`}
+      className={`flex p-4 justify-between items-center self-stretch ${headerClassname} sm:px-20`}
     >
-      <div className="flex min-w-full justify-between items-center">
+      <div className="flex justify-between items-center flex-[100%] sm:px-8">
         <div className="text-center text-3xl font-bold">&#60; SS/&#62;</div>
         <div className="justify-center items-center gap-6 hidden sm:flex">
           <a className="text-base">About</a>

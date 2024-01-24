@@ -14,11 +14,13 @@ export const Hero = () => {
     <div
       className={`flex py-16 px-4 justify-between items-start self-stretch ${headerClass} sm: py-24 px-20`}
     >
-      <div className="flex flex-col items-start gap-12 flex-1 sm:px-8 flex-wrap">
-        <div className="flex flex-col justify-center items-center self-stretch sm:items-start gap-12 max-w-[768px]">
+      <div className="flex flex-col-reverse items-start gap-12 flex-[100%] sm:px-8 sm:flex-row">
+        <div className="flex flex-col justify-start items-start self-stretch sm:items-start gap-12 sm:max-w-[768px]">
           <div className="flex flex-col justify-center items-start gap-2">
-            <p className="text-6xl font-bold leading-tight">Hi, I’m Sagar 👋</p>
-            <p className="text-base font-normal leading-6 w-[768px]">
+            <p className="text-3xl font-bold leading-tight sm:text-6xl">
+              Hi, I’m Sagar 👋
+            </p>
+            <p className="text-base font-normal leading-6">
               I'm a full stack developer (React.js & Node.js) with a focus on
               creating (and occasionally designing) exceptional digital
               experiences that are fast, accessible, visually appealing, and
@@ -56,15 +58,15 @@ export const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="flex min-w-96 flex-col justify-center items-end flex-1">
-          <div className="w-80 h-auto ">
+        <div className="flex flex-col justify-center items-center self-stretch">
+          <div className="w-[280px] h-[300px] relative flex justify-center">
             <div
-              className={`w-[280px] h-[320px] shrink-0 absolute  mt-10 ml-10 ${
+              className={`w-[280px] h-[280px] flex-shrink-0 absolute top-5 sm:left-10 sm:top-10 ${
                 theme == "light" ? "bg-gray-200" : "bg-gray-700"
               }`}
             ></div>
             <img
-              className={`w-[280px] h-[320px] border-8 shrink-0 relative ${imgClass}`}
+              className={`w-[240px] h-[280px] border-8 shrink-0 relative sm:w-[280px] ${imgClass}`}
               src="https://s3-alpha-sig.figma.com/img/f85c/f455/11cd2ba02a83d564218d6500a134a91d?Expires=1706486400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=J6ilx-NOb63~KzVYyZfxx4qzRN~gm9QHjip~sIpK9MTVSZsX~huwLpZqpJyqW7GDTT8lB8QtBCj5-2PtU-Ygp48aaoTUuruT2gkBXQL~lHchh7pKMdkHIJrb2oMYnvdAYQNxOMjjUIF8HDscGx5Nt7iw4F0WHx0HmiLM~STQEdaUIw0hp1E28oW5KSCJTY9dpgSECxgzNyTUNroqNwgsE5X4gYOS6SIFW~iIc98LskU-vU9DVPo3dEzu2N-2Fz4UiQZedr6UAGezp4AEFbGvN6RWj7EetJyu7prBfAxtS4Q0dAi36VtSyse6uAVnFGuXHQ9Y83-~6UcTO1YSVEzzGQ__"
               alt=""
             />

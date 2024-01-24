@@ -10,13 +10,13 @@ export const Contact = () => {
   const { theme } = useTheme();
   return (
     <div
-      className={`flex py-24 px-20 flex-col justify-center items-center self-stretch ${
+      className={`flex py-16 px-4 sm:py-24 sm:px-20 flex-col justify-center items-center self-stretch ${
         theme == "light"
           ? "bg-white text-gray-600"
           : "bg-gray-950 text-gray-300"
       }`}
     >
-      <div className="flex px-8 flex-col justify-center items-center gap-12 self-stretch">
+      <div className="flex px-8 flex-col justify-center items-center gap-6 sm:gap-12 self-stretch">
         <div className="flex flex-col items-center gap-4 self-stretch">
           <div className="flex flex-col justify-center items-center">
             <div
@@ -32,22 +32,22 @@ export const Contact = () => {
             developer, have a query, or simply want to connect.
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-4">
-          <div className="flex justify-center items-center gap-5">
-            <EmailLogo />
+        <div className="flex flex-col justify-center items-center sm:gap-4">
+          <div className="flex justify-center items-center gap-4 sm:gap-5">
+            <EmailLogo className="sm:w-6 sm:h-6" />
             <p
-              className={` text-center text-4xl font-semibold ${
+              className={` text-center text-lg sm:text-4xl font-semibold ${
                 theme == "light" ? "text-gray-900" : "text-gray-50"
               }`}
             >
               reachsagarshah@gmail.com
             </p>
-            <CopyLogo />
+            <CopyLogo className="sm:w-6 sm:h-6" />
           </div>
           <div className="flex justify-center items-center gap-5">
-            <PhoneLogo />
+            <PhoneLogo className="sm:w-6 sm:h-6" />
             <p
-              className={`text-center text-4xl font-semibold ${
+              className={`text-center text-lg sm:text-4xl font-semibold ${
                 theme == "light" ? "text-gray-900" : "text-gray-50"
               }`}
             >
@@ -58,7 +58,7 @@ export const Contact = () => {
         </div>
         <div className="flex justify-center items-center gap-16 self-stretch rounded-xl">
           <div className="flex flex-col justify-center items-center gap-2">
-            <p className="text-base ">
+            <p className="sm:text-base text-xs ">
               You may also find me on these platforms!
             </p>
             <div className="flex flex-col justify-center items-center gap-4 self-stretch">

@@ -6,13 +6,13 @@ export const Work = () => {
   const { theme } = useTheme();
   return (
     <div
-      className={`flex py-24 px-20 flex-col justify-center items-center self-stretch ${
+      className={`flex py-16 px-4 sm:py-24 sm:px-20 flex-col justify-center items-center self-stretch ${
         theme == "light"
           ? "bg-white text-gray-600"
           : "bg-gray-950 text-gray-300"
       }`}
     >
-      <div className="flex px-8 flex-col justify-center items-center gap-12 self-stretch">
+      <div className="flex gap-6 sm:px-8 flex-col justify-center items-center sm:gap-12 self-stretch">
         <div className="flex flex-col items-center gap-4 self-stretch">
           <div
             className={`flex py-1 px-5 justify-center items-center rounded-xl bg-gray-200 ${
@@ -23,7 +23,7 @@ export const Work = () => {
           </div>
           <div className="flex justify-center items-center self-stretch">
             <p
-              className={`flex self-stretch max-w-[576px] text-xl font-normal ${
+              className={`flex self-stretch max-w-[576px] text-xl font-normal text-center ${
                 theme == "light" ? "text-gray-600" : "text-gray-300"
               }`}
             >
@@ -36,6 +36,7 @@ export const Work = () => {
             pic={element.pic}
             text={element.text}
             tech={element.tech}
+            header={element.header}
             key={index}
             index={index}
           />

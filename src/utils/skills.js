@@ -48,9 +48,6 @@ export const skills1 = [
     icon: <SocketIcon />,
     skillName: "Socket.io",
   },
-];
-
-export const skills2 = [
   {
     icon: <PostSQLIcon />,
     skillName: "PostgreSQL",

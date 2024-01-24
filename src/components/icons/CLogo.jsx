@@ -5,7 +5,7 @@ export const CLogo = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={17}
+      width={16}
       height={16}
       viewBox="0 0 17 16"
       fill="none"

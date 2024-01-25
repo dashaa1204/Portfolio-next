@@ -6,11 +6,13 @@ import { Experience } from "./Experience";
 import { Work } from "./Work";
 import { Contact } from "./Contact";
 import { Footer } from "./Footer";
+import { MenuBurger } from "./MenuBurger";
 
 export const Portfolio = () => {
   return (
-    <div className="flex w-[375px] flex-col items-start sm:w-[1140px]">
+    <div className="flex w-[375px] flex-col items-start sm:w-[1140px] relative">
       <Header />
+      <MenuBurger />
       <Hero />
       <About />
       <Skills />

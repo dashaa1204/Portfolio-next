@@ -1,6 +1,8 @@
 import { useTheme } from "@/context/ThemeContext";
 import { LightIcon } from "./icons/LightIcon";
 import { DarkIcon } from "./icons/DarkIcon";
+import { Burger } from "./Burger";
+import { MenuBurger } from "./MenuBurger";
 
 export const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -24,6 +26,7 @@ export const Header = () => {
     >
       <div className="flex justify-between items-center flex-[100%] sm:px-8">
         <div className="text-center text-3xl font-bold">&#60; SS/&#62;</div>
+        <Burger />
         <div className="justify-center items-center gap-6 hidden sm:flex">
           <a className="text-base">About</a>
           <a className="text-base">Work</a>

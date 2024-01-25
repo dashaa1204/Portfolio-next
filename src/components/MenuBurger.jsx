@@ -14,7 +14,7 @@ export const MenuBurger = () => {
   };
   return (
     <div
-      className={`flex w-[375px] h-[667px] flex-col flex-shrink-0 absolute z-50 items-end ${
+      className={`flex w-[375px] h-[667px] flex-col flex-shrink-0 absolute -z-50 items-end ${
         close == "open" ? "z-50" : "-z-50"
       }`}
     >
@@ -77,8 +77,14 @@ export const MenuBurger = () => {
               {theme == "light" ? <LightIcon /> : <DarkIcon />}
             </div>
           </div>
-          <div className="flex py-[6px] px-4 justify-center items-center gap-2 self-stretch rounded-xl bg-gray-900">
-            <p className="text-base font-medium text-gray-50">Download CV</p>
+          <div
+            className={`flex py-[6px] px-4 justify-center items-center gap-2 self-stretch rounded-xl  ${
+              theme == "light"
+                ? "bg-gray-900 text-gray-50"
+                : "bg-[#FFF] text-gray-950"
+            }`}
+          >
+            <p className="text-base font-medium">Download CV</p>
           </div>
         </div>
       </div>
